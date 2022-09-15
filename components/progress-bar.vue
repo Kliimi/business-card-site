@@ -40,21 +40,20 @@ export default {
 .container .card
 {
   position:relative;
-  width:220px;
-  background:#1C0A22;
   display:flex;
   justify-content:center;
   align-items:center;
+  width:220px;
   height:260px;
-  border-radius: 30px;
   text-align:center;
-  overflow:hidden;
+  border-radius: 30px;
+  background:#1C0A22;
   transition:0.5s;
 }
 .container .card:hover
 {
-  transform:translateY(-10px);
   box-shadow:0 15px 35px rgba(0,0,0,.5);
+  transform:translateY(-10px);
 }
 .percent
 {
@@ -62,38 +61,37 @@ export default {
   width:150px;
   height:150px;
   border-radius:50%;
-  box-shadow: inset 0 0 50px #000;
   background:#1C0A22;
-  z-index:1000;
+  box-shadow: inset 0 0 50px #000;
 }
 .percent .num
 {
   position:absolute;
   top:0;
   left:0;
-  width:150px;
-  height:150px;
   display:flex;
   justify-content:center;
   align-items:center;
+  width:150px;
+  height:150px;
   border-radius:50%;
 }
 .percent .num h2
 {
-  color:#777;
-  font-weight:700;
   font-size:40px;
+  font-weight:700;
+  color:#777;
   transition:0.5s;
 }
 .card:hover .percent .num h2
 {
-  color:#fff;
   font-size:60px;
+  color:#fff;
 }
 .percent .num h2 span
 {
-  color:#777;
   font-size:24px;
+  color:#777;
   transition:0.5s;
 }
 .card:hover .percent .num h2 span
@@ -102,34 +100,33 @@ export default {
 }
 .text
 {
-  position:relative;
-  color:#777;
-  margin-top:20px;
-  font-weight:700;
-  font-size:18px;
-  letter-spacing:1px;
-  text-transform:uppercase;
-  transition:0.5s;
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #777;
+  transition: 0.5s;
+  margin-top: 20px;
 }
 .card:hover .text
 {
-  color:#fff;
+  color: #fff;
 }
 svg
 {
-  position:relative;
-  width:150px;
+  position: relative;
+  width: 150px;
   height:150px;
-  z-index:10;
 }
 svg circle
 {
   width:100%;
   height:100%;
-  fill:none;
   stroke:#42204E;
-  stroke-width:10;
   stroke-linecap:round;
+  stroke-width:10;
+  fill:none;
   transform:translate(5px,5px);
 }
 svg circle:nth-child(2)
@@ -137,5 +134,4 @@ svg circle:nth-child(2)
   stroke-dasharray:440;
   stroke-dashoffset:440;
 }
-
 </style>

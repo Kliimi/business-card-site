@@ -15,62 +15,61 @@
 <style scoped>
 .light {
     position: absolute;
-    width: 0px;
-    opacity: .75;
-    box-shadow: #62326e 0px 0px 20px 2px;
-    opacity: 0;
     top: 100vh;
     bottom: 0px;
     left: 0px;
     right: 0px;
+    width: 0px;
+    opacity: 0;
+    box-shadow: #62326e 0px 0px 20px 2px;
     margin: auto;
 }
 
 .x1{
+  -webkit-transform: scale(1.0);
+   -moz-transform: scale(1.0);
+   -o-transform: scale(1.0);
+  transform: scale(1.0);
   -webkit-animation: floatUp 4s infinite linear;
   -moz-animation: floatUp 4s infinite linear;
   -o-animation: floatUp 4s infinite linear;
   animation: floatUp 4s infinite linear;
-   -webkit-transform: scale(1.0);
-   -moz-transform: scale(1.0);
-   -o-transform: scale(1.0);
-  transform: scale(1.0);
 }
 
 .x2{
-  -webkit-animation: floatUp 7s infinite linear;
-  -moz-animation: floatUp 7s infinite linear;
-  -o-animation: floatUp 7s infinite linear;
-  animation: floatUp 7s infinite linear;
+  left: 15%;
   -webkit-transform: scale(1.6);
   -moz-transform: scale(1.6);
   -o-transform: scale(1.6);
   transform: scale(1.6);
-  left: 15%;
+  -webkit-animation: floatUp 7s infinite linear;
+  -moz-animation: floatUp 7s infinite linear;
+  -o-animation: floatUp 7s infinite linear;
+  animation: floatUp 7s infinite linear;
 }
 
 .x3{
-  -webkit-animation: floatUp 2.5s infinite linear;
-  -moz-animation: floatUp 2.5s infinite linear;
-  -o-animation: floatUp 2.5s infinite linear;
-  animation: floatUp 2.5s infinite linear;
+  left: -15%;
   -webkit-transform: scale(.5);
   -moz-transform: scale(.5);
   -o-transform: scale(.5);
   transform: scale(.5);
-  left: -15%;
+  -webkit-animation: floatUp 2.5s infinite linear;
+  -moz-animation: floatUp 2.5s infinite linear;
+  -o-animation: floatUp 2.5s infinite linear;
+  animation: floatUp 2.5s infinite linear;
 }
 
 .x4{
-  -webkit-animation: floatUp 4.5s infinite linear;
-  -moz-animation: floatUp 4.5s infinite linear;
-  -o-animation: floatUp 4.5s infinite linear;
-  animation: floatUp 4.5s infinite linear;
+  left: -34%;
   -webkit-transform: scale(1.2);
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
   transform: scale(1.2);
-  left: -34%;
+  -webkit-animation: floatUp 4.5s infinite linear;
+  -moz-animation: floatUp 4.5s infinite linear;
+  -o-animation: floatUp 4.5s infinite linear;
+  animation: floatUp 4.5s infinite linear;
 }
 
 .x5{
@@ -86,51 +85,51 @@
 }
 
 .x6{
-  -webkit-animation: floatUp 3s infinite linear;
-  -moz-animation: floatUp 3s infinite linear;
-  -o-animation: floatUp 3s infinite linear;
+  left: -81%;
   animation: floatUp 3s infinite linear;
   -webkit-transform: scale(.8);
   -moz-transform: scale(.8);
   -o-transform: scale(.8);
   transform: scale(.8);
-  left: -81%;
+  -webkit-animation: floatUp 3s infinite linear;
+  -moz-animation: floatUp 3s infinite linear;
+  -o-animation: floatUp 3s infinite linear;
 }
 
 .x7{
-  -webkit-animation: floatUp 5.3s infinite linear;
-  -moz-animation: floatUp 5.3s infinite linear;
-  -o-animation: floatUp 5.3s infinite linear;
-  animation: floatUp 5.3s infinite linear;
+  left: 37%;
   -webkit-transform: scale(3.2);
   -moz-transform: scale(3.2);
   -o-transform: scale(3.2);
   transform: scale(3.2);
-  left: 37%;
+  -webkit-animation: floatUp 5.3s infinite linear;
+  -moz-animation: floatUp 5.3s infinite linear;
+  -o-animation: floatUp 5.3s infinite linear;
+  animation: floatUp 5.3s infinite linear;
 }
 
 .x8{
-  -webkit-animation: floatUp 4.7s infinite linear;
-  -moz-animation: floatUp 4.7s infinite linear;
-  -o-animation: floatUp 4.7s infinite linear;
-  animation: floatUp 4.7s infinite linear;
+  left: 62%;
   -webkit-transform: scale(1.7);
   -moz-transform: scale(1.7);
   -o-transform: scale(1.7);
   transform: scale(1.7);
-  left: 62%;
+  -webkit-animation: floatUp 4.7s infinite linear;
+  -moz-animation: floatUp 4.7s infinite linear;
+  -o-animation: floatUp 4.7s infinite linear;
+  animation: floatUp 4.7s infinite linear;
 }
 
 .x9{
-  -webkit-animation: floatUp 4.1s infinite linear;
-  -moz-animation: floatUp 4.1s infinite linear;
-  -o-animation: floatUp 4.1s infinite linear;
-  animation: floatUp 4.1s infinite linear;
+  left: 85%;
   -webkit-transform: scale(0.9);
   -moz-transform: scale(0.9);
   -o-transform: scale(0.9);
   transform: scale(0.9);
-  left: 85%;
+  -webkit-animation: floatUp 4.1s infinite linear;
+  -moz-animation: floatUp 4.1s infinite linear;
+  -o-animation: floatUp 4.1s infinite linear;
+  animation: floatUp 4.1s infinite linear;
 }
 @-webkit-keyframes floatUp{
   0%{top: 100vh; opacity: 0;}

@@ -35,19 +35,19 @@ main {
 }
 
 ul {
+  list-style-type: none;
   display: flex;
   padding: 0;
-  list-style-type: none;
   margin: 0;
 }
 
 .button {
   width: 70%;
   padding: 1em;
-  border-radius: 50px;
   font-size: 1.2em;
-  transition: all .8s;
+  border-radius: 50px;
   filter: hue-rotate(0deg);
+  transition: all .8s;
 }
 .b-red, .b-red:before {
   background: rgba(234,110,72,1);
@@ -60,8 +60,8 @@ ul {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea6e48', endColorstr='#bc1a63', GradientType=1 );
 }
 .rot-135:hover {
-  cursor: pointer;
   filter: hue-rotate(100deg);
+  cursor: pointer;
 }
 a {
   text-decoration: none;

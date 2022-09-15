@@ -41,13 +41,13 @@ main {
 
 .slider-thumb {
   position: absolute;
+  display: block;
   width: 550px;
   height: 550px;
-  background: linear-gradient(90deg,#e52e71,#ff8a00);
   border-radius: 72% 47% 82% 35% / 45% 45% 80% 66%;
+  background: linear-gradient(90deg,#e52e71,#ff8a00);
   will-change: border-radius, transform, opacity;
   animation: sliderShape 6s linear infinite;
-  display: block;
   -webkit-animation: sliderShape 6s linear infinite;
 }
 .slider-thumb:hover {
@@ -56,11 +56,11 @@ main {
 @keyframes sliderShape{
   0%,100%{
 
-  border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
     transform: translate3d(0,0,0) rotateZ(0.01deg);
   }
   34%{
-      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
     transform:  translate3d(0,5px,0) rotateZ(0.01deg);
   }
   50%{
