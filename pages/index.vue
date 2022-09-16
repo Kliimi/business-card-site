@@ -28,7 +28,10 @@
 
 export default {
   name: 'IndexPage',
-  layout: 'default-page'
+  layout: 'default-page',
+  head: {
+    title: 'Kliimi'
+  }
 }
 </script>
 

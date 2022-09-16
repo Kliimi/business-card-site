@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="slider-thumb"></div>
+    <div class="slider-thumb" />
     <div class="container">
       <h2>Связаться со мной:</h2>
       <ul>
@@ -9,13 +9,17 @@
         <li><span>Telegram:</span> <a href="https://t.me/Kliimi">@Kliimi</a></li>
         <li><span>Github:</span> <a href="https://github.com/Kliimi">@Kliimi</a></li>
       </ul>
-  </div>
+    </div>
   </main>
 </template>
 
 <script>
 export default {
-  layout: 'default-page'
+  name: 'ContactsPage',
+  layout: 'default-page',
+  head: {
+    title: 'Связаться со мной'
+  }
 }
 </script>
 
@@ -23,8 +27,6 @@ export default {
 main {
   flex-direction: column;
   align-items: center;
-  height: calc(100vh - 59px);
-  overflow: hidden;
 }
 .container {
   position: relative;

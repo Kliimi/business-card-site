@@ -30,6 +30,7 @@
 <script>
 import ProgressBar from '~/components/progress-bar.vue'
 export default {
+  name: 'AboutMeage',
   components: { ProgressBar },
   layout: 'default-page',
   data () {
@@ -42,6 +43,9 @@ export default {
         { name: 'Nuxt', progress: '50', color: 'rgba(75,26,188,1)' }
       ]
     }
+  },
+  head: {
+    title: 'Обо мне'
   }
 }
 </script>
@@ -51,7 +55,7 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 2em;
-  height: calc(100vh - 59px);
+  min-height: calc(100vh - 59px);
 }
 main > p {
   max-width: 60%;
@@ -59,6 +63,7 @@ main > p {
 }
 .codewars-container {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 1em;
 }
