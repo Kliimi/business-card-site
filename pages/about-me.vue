@@ -62,12 +62,12 @@ main > p {
 }
 .codewars-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 1em;
 }
 .cards-container {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2em
 }

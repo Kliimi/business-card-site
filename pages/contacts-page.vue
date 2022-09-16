@@ -30,7 +30,7 @@ main {
 }
 .container {
   position: relative;
-  top: 10%;
+  top: 100px;
 }
 .container > ul {
   flex-direction: column;
