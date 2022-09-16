@@ -39,7 +39,6 @@ export default {
 main {
   padding-top: 0;
   justify-content: center;
-  height: 100vh;
 }
 .container {
   position: absolute;

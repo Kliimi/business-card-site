@@ -30,6 +30,7 @@ body {
 } */
 main {
   display: flex;
+  min-height: calc(100vh - 59px);
   padding-top: 10%;
   background: transparent;
 }

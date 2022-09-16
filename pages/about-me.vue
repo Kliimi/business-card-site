@@ -55,7 +55,6 @@ main {
   flex-direction: column;
   align-items: center;
   gap: 2em;
-  min-height: calc(100vh - 59px);
 }
 main > p {
   max-width: 60%;
