@@ -25,7 +25,7 @@
   </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 header {
   display: flex;
   justify-content: space-between;
@@ -56,17 +56,17 @@ header {
 .navigation__item:after{
   content: "";
   position: absolute;
-  height: 4px;
   top: auto;
-  right: 50%;
   bottom: -1em;
   left: 50%;
+  right: 50%;
+  height: 4px;
   background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
   transition: all .3s ease-out;
 }
 .navigation__item:hover::after {
-  right: 0;
   left: 0;
+  right: 0;
 }
 .nuxt-link-exact-active {
   color: #EE0979;
@@ -74,14 +74,15 @@ header {
 .nuxt-link-exact-active:after {
   content: "";
   position: absolute;
-  height: 4px;
   top: auto;
-  left: 0;
   bottom: -1em;
-  right: 0;
+  left: 50%;
+  right: 50%;
+  height: 4px;
   background: linear-gradient(90deg, #EE0979 0%, #FF6A00 100%);
 }
 .logo::after {
   display: none;
 }
+
 </style>

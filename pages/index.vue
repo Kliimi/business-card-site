@@ -19,7 +19,7 @@
           </li>
         </ul>
       </div>
-      <img src="~/assets/images/photo_2022-03-30_13-11-00.jpg">
+      <img src="~/assets/images/photo_2022-09-19_16-46-46.jpg">
     </div>
   </main>
 </template>
@@ -28,14 +28,13 @@
 
 export default {
   name: 'IndexPage',
-  layout: 'default-page',
   head: {
     title: 'Kliimi'
   }
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 main {
   padding-top: 0;
   justify-content: center;
@@ -46,6 +45,14 @@ main {
   display: flex;
   text-align: center;
   justify-content: space-evenly;
+  @include md {
+    flex-direction: column;
+    top: 8%;
+    h1 {
+      font-size: 2.4em;
+      margin-bottom: 1.1em;
+    }
+  }
 }
 
 ul {
@@ -58,10 +65,15 @@ li {
   padding: 1em;
 }
 img {
-  width: 25vw;
-  height: 25vw;
+  max-width: 25vw;
+  max-height: 25vw;
   border-radius: 50%;
   margin-top: 2em;
   margin-left: 4em ;
+  @include md {
+    max-width: 85vw;
+    max-height: 85vw;
+    margin: 2em auto 0;
+  }
 }
 </style>

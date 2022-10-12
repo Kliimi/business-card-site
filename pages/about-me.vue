@@ -32,7 +32,6 @@ import ProgressBar from '~/components/progress-bar.vue'
 export default {
   name: 'AboutMeage',
   components: { ProgressBar },
-  layout: 'default-page',
   data () {
     return {
       cards: [
@@ -50,20 +49,31 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 main {
   flex-direction: column;
   align-items: center;
   gap: 2em;
+  & > p {
+    max-width: 60%;
+    font-size: 1.1em;
+    @include md {
+      max-width: 80%;
+    }
+  }
 }
-main > p {
-  max-width: 60%;
-  font-size: 1.1em;
-}
+
 .codewars-container {
   display: flex;
   align-items: center;
   gap: 1em;
+  @include md {
+      flex-direction: column;
+      text-align: center;
+      img {
+        max-width: 95%;
+      }
+    }
 }
 .cards-container {
   display: flex;

@@ -1,33 +1,13 @@
+@import "./mixins.scss";
 * {
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #FFFFFF;
 }
 body {
-  /* overflow: hidden; */
-
-  /* background: #1B0522; */
-
   background-image: linear-gradient(to top, #3c1d46, #33183d, #2a1334, #220e2b, #1b0522);
   margin: 0;
 }
-/* .ellipse__wrapper {
-  position: relative;
-  width: 1345px;
-  height: 1345px;
-  left: 816px;
-  top: 200px;
-  overflow: hidden;
-} */
-/* .ellipse {
-  position: absolute;
-  width: 1345px;
-  height: 1345px;
-  left: -390px;
-  top: 733px;
-  background: #381A42;
-  filter: blur(150px);
-} */
 main {
   display: flex;
   min-height: calc(100vh - 59px);
