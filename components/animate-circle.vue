@@ -6,15 +6,15 @@
 .slider-thumb {
   position: absolute;
   display: block;
-  width: 50vw;
-  height: 50vw;
+  width: 35vw;
+  height: 35vw;
   border-radius: 72% 47% 82% 35% / 45% 45% 80% 66%;
   will-change: border-radius, transform, opacity;
   animation: sliderShape 6s linear infinite;
   -webkit-animation: sliderShape 6s linear infinite;
   @include l {
-    width: 60vw;
-    height: 60vw;
+    width: 63vw;
+    height: 63vw;
   }
   @include md {
     width: 80vw;
